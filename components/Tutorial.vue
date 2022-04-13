@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <div class="max-w-4xl mx-auto sm:px-6 lg:px-8">
-      <button @click="testSafari">Test Notification</button>
+      <button class="btn" @click="testSafari">Test Notification</button>
       <a
         class="flex justify-center pt-8 sm:pt-0"
         href="https://nuxtjs.org"
