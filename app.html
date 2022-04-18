@@ -40,13 +40,11 @@
         y.async = 1;
         (b = p.getElementsByTagName(P)[0]).parentNode.insertBefore(y, b);
       })(window, document, "script");
-      console.log(document.location.pathname + 'service-worker.js')
       // See https://js.appboycdn.com/web-sdk/3.5/doc/module-appboy.html#initialize for options
       appboy.initialize("e491231d-c4ae-466d-8f7f-ba8ad308f12a", {
         enableLogging: true,
         baseUrl: "https://sdk.iad-01.braze.com/api/v3",
         safariWebsitePushId: "web.com.braze.sample-build",
-        serviceWorkerLocation: document.location.pathname + 'service-worker.js',
       });
       appboy.display.automaticallyShowNewInAppMessages();
       appboy.openSession();
