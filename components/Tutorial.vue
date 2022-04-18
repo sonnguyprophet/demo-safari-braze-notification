@@ -120,7 +120,10 @@
 export default {
   methods: {
     testSafari() {
-      appboy.registerAppboyPushMessages();
+      appboy.registerAppboyPushMessages(function() {
+        appboy.logCustomEvent("send me push");
+        appboy.requestImmediateDataFlush();
+      });
     }
   }
 };
